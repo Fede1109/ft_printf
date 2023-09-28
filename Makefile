@@ -6,14 +6,14 @@
 #    By: fdiaz-gu <fdiaz-gu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/27 17:09:22 by fdiaz-gu          #+#    #+#              #
-#    Updated: 2023/09/28 16:18:36 by fdiaz-gu         ###   ########.fr        #
+#    Updated: 2023/09/28 16:38:32 by fdiaz-gu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
 SRCS = ft_printf.c ft_check_type.c ft_print_char.c ft_print_d_i.c ft_print_string.c ft_print_x.c \
-ft_print_unsigned.c
+ft_print_unsigned.c ft_print_p.c ft_set_type_x.c
 
 
 OBJS = $(SRCS:.c=.o)
