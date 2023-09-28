@@ -6,7 +6,7 @@
 /*   By: fdiaz-gu <fdiaz-gu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 15:43:37 by fdiaz-gu          #+#    #+#             */
-/*   Updated: 2023/09/28 16:16:29 by fdiaz-gu         ###   ########.fr       */
+/*   Updated: 2023/09/28 16:42:46 by fdiaz-gu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ int	ft_print_d_i(int nb);
 int	ft_print_string(char *str);
 int	ft_print_unsigned(unsigned int nb);
 int	ft_set_x_type(unsigned int nb, int type);
+int	ft_print_x(unsigned long nb, char *alpha);
+int	ft_print_p(void *arg);
 
 #endif
