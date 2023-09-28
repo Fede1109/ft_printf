@@ -6,13 +6,13 @@
 /*   By: fdiaz-gu <fdiaz-gu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 16:37:07 by fdiaz-gu          #+#    #+#             */
-/*   Updated: 2023/09/28 16:42:53 by fdiaz-gu         ###   ########.fr       */
+/*   Updated: 2023/09/28 18:18:25 by fdiaz-gu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_set_x_type(unsigned int nb, int type)
+int	ft_set_x_type(unsigned int nb, int type)
 {
 	char	*alpha;
 
