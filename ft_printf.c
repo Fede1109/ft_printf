@@ -6,7 +6,7 @@
 /*   By: fdiaz-gu <fdiaz-gu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 15:32:14 by fdiaz-gu          #+#    #+#             */
-/*   Updated: 2023/09/28 16:42:07 by fdiaz-gu         ###   ########.fr       */
+/*   Updated: 2023/09/29 16:00:37 by fdiaz-gu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,13 @@ int	ft_printf(char const *str, ...)
 		}
 		else
 			count += ft_print_char(str[i]);
+		if (count < 0)
+		{
+			va_end(v_args);
+			return (-1);
+		}
 		i++;
 	}
 	va_end(v_args);
-	if (count < 0)
-		return (-1);
 	return (count);
 }
