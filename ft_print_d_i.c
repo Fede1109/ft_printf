@@ -6,7 +6,7 @@
 /*   By: fdiaz-gu <fdiaz-gu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 15:33:27 by fdiaz-gu          #+#    #+#             */
-/*   Updated: 2023/09/28 16:12:50 by fdiaz-gu         ###   ########.fr       */
+/*   Updated: 2023/09/29 16:48:06 by fdiaz-gu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,19 @@ int	ft_print_d_i(int nb)
 
 	count = 0;
 	if (nb == -2147483648)
-	{
-		write(1, "-2147483648", 11);
-		count = 11;
-	}
+		return (ft_print_string("-2147483648"));
 	else if (nb < 0)
 	{
 		count += ft_print_char('-');
+		if (count < 0)
+			return (-1);
 		count += ft_print_d_i(-nb);
 	}
 	else if (nb > 9)
 	{
 		count += ft_print_d_i(nb / 10);
+		if (count < 0)
+			return (-1);
 		count += ft_print_d_i(nb % 10);
 	}
 	else
